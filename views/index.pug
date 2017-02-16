@@ -1,0 +1,29 @@
+doctype 5
+html
+  head
+    title='Kim Kwanka\'s' + title
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    .stickyFooterWrapper
+      header
+        .container        
+          .row          
+              .column.column-50.column-offset-25
+                a(href='//kimkwanka.com' target='_blank' style='text-align:center') Kim Kwanka's
+                h1=title
+      .container        
+        .row          
+          .column.column-50.column-offset-25          
+            blockquote
+              h2 User stories:
+              p 1) I can get the IP address, language and operating system for my browser.
+
+            h3 Example usage:
+            pre: code=url+'/api/'
+
+            h3 Example output:
+            pre: code {"ipaddress":"0.0.0.0","language":"de-DE","software":"X11; Linux x86_64"}
+              
+    footer
+          a(href='https://github.com/kimkwanka/fcc-reqheader' target='_blank') View source on Github

@@ -1,0 +1,16 @@
+{
+  "name": "fcc-reqheader",
+  "version": "1.0.0",
+  "description": "Full stack JS microservice app for parsing the request header",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha -R nyan ./server-test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11",
+    "stylus": "^0.54.5"
+  }
+}
