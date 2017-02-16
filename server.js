@@ -27,6 +27,20 @@ app.get('/', function(req, res, next) {
   res.render('index', {title: 'ReqHeader Parser', url:'https://kk-fcc-reqheader.herokuapp.com'});  
 });
 
+app.get('/api', function(req, res, next) {
+  //console.log(req.headers);
+  //let { "host" } = req.headers;
+  console.log(req.ip);
+  console.log(req.acceptsLanguages());
+  var ip = req.headers['x-forwarded-for'] || 
+     req.connection.remoteAddress || 
+     req.socket.remoteAddress ||
+     req.connection.socket.remoteAddress;
+  console.log('ip????',ip);
+  res.json(req.headers);
+  //res.render('index', {title: 'API', url:'https://kk-fcc-reqheader.herokuapp.com'});  
+});
+
 app.get('*', function(req, res) {
   res.render('404', {});
 });
