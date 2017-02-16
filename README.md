@@ -1,3 +1,3 @@
 # fcc-reqheader
 
-Microservice using nodejs and expres that parses the request header.
+Microservice using nodejs and express that parses the request header.
